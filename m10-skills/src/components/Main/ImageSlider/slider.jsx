@@ -24,13 +24,35 @@ const ImageSlider = ({ images, interval = 3000 }) => {
         );
     };
 
-    const name = () => {
-        return(
-            <div>Test</div>
-        )
 
+    let name = "Test" 
+
+    switch (currentImageIndex) {
+        case 0:
+            name = "Sportpark Goed Genoeg & Clubgebouw AFC"
+            break;
+    
+        case 1:
+            name = "Renovatie Bostheater"
+            break;
+    
+        case 2:
+            name = "Nieuwbouw AICS"
+            break;
+    
+        case 3:
+            name = "Renovatie de Wereldburger"
+            break;
+    
+        case 4:
+            name = "Verbouwing en Nieuwbouw Werven en Overslagpunten"
+            break;
+    
+        default:
+            name = "Test"
+            break;
     }
-
+     
 
 
 
@@ -48,7 +70,7 @@ const ImageSlider = ({ images, interval = 3000 }) => {
             <button className="nav-button nav-button-right" onClick={nextImage}>
                 <i className="fa-solid fa-arrow-right"></i>
             </button>
-            {name}
+            <h3 className='auto-slider-title'>{name}</h3>
         </div>
     );
 }

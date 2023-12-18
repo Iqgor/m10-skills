@@ -10,20 +10,20 @@ import foto5 from './ImageSlider/img/foto5.jpg'
 import ImageSlider from './ImageSlider/slider';
 
 function Main() {
-    const images = [
-        foto1,
-        foto2,
-        foto3,
-        foto4,
-        foto5,
+  const images = [
+    foto1,
+    foto2,
+    foto3,
+    foto4,
+    foto5,
 
-      ];
-    return (
-        <main className="main">
-            <ImageSlider images={images} interval={10000} />
-        </main>
-    );
-  }
-  
-  export default Main;
-  
+  ];
+  return (
+    <main className="main">
+      <h2 className="main__title">Bouwmanagement en Maatschappelijk Vastgoed</h2>
+      <ImageSlider images={images} interval={7500} />
+    </main>
+  );
+}
+
+export default Main;

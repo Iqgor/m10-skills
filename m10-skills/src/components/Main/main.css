@@ -2,3 +2,8 @@
     width: 100%;
     height: 100rem;
 }
+
+.main__title{
+    padding: 4rem;
+    font-size: 200%;
+}
