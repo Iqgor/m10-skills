@@ -1,0 +1,42 @@
+.header__list{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 2rem;
+    font-weight: 200;
+}
+
+.header__listItem{
+    color:black;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    display: inline-block;
+
+}
+
+.header__listItem:hover{
+    color: #ff0000;
+    
+}
+
+.header__listItem::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0.05rem;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+.header__listItem:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    background-color: #ff0000;
+}
+
+.header__listItem > a{
+    color:inherit;
+}
