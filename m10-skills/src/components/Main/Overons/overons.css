@@ -1,0 +1,11 @@
+.overons{
+    
+    width: 50%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.overons > p{
+    padding-top: 2rem;
+}

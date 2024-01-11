@@ -58,18 +58,18 @@ const ImageSlider = ({ images, interval = 3000 }) => {
 
     return (
         <div className="auto-slider-container">
-            <button className="nav-button nav-button-left" onClick={prevImage}>
+            {/* <button className="nav-button nav-button-left" onClick={prevImage}>
                 <i className="fa-solid fa-arrow-left"></i>
-            </button>
+            </button> */}
             <img
                 src={images[currentImageIndex]}
                 alt={`Slide ${currentImageIndex + 1}`}
                 className="auto-slider-image"
             />
             
-            <button className="nav-button nav-button-right" onClick={nextImage}>
+            {/* <button className="nav-button nav-button-right" onClick={nextImage}>
                 <i className="fa-solid fa-arrow-right"></i>
-            </button>
+            </button> */}
             <h3 className='auto-slider-title'>{name}</h3>
         </div>
     );

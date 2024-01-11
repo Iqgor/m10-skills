@@ -7,7 +7,9 @@ import foto4 from './ImageSlider/img/foto4.jpg'
 import foto5 from './ImageSlider/img/foto5.jpg'
 
 
-import ImageSlider from './ImageSlider/slider';
+import ImageSlider from './ImageSlider/Slider';
+import Overons from './Overons/Overons';
+
 
 function Main() {
   const images = [
@@ -22,6 +24,10 @@ function Main() {
     <main className="main">
       <h2 className="main__title">Bouwmanagement en Maatschappelijk Vastgoed</h2>
       <ImageSlider images={images} interval={7500} />
+      <div className="main__info">
+        <Overons/>
+      </div>
+      
     </main>
   );
 }
