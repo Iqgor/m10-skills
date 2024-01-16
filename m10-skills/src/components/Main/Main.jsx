@@ -9,9 +9,10 @@ import foto5 from './ImageSlider/img/foto5.jpg'
 
 import ImageSlider from './ImageSlider/Slider';
 import Overons from './Overons/Overons';
+import Menu from './Menu/Menu';
+import Info from './Info/Info'
 
-
-function Main() {
+function Main(props) {
   const images = [
     foto1,
     foto2,
@@ -20,16 +21,34 @@ function Main() {
     foto5,
 
   ];
-  return (
-    <main className="main">
-      <h2 className="main__title">Bouwmanagement en Maatschappelijk Vastgoed</h2>
-      <ImageSlider images={images} interval={7500} />
-      <div className="main__info">
-        <Overons/>
-      </div>
-      
-    </main>
-  );
+
+
+
+
+
+  switch (props.props) {
+    case 0:
+      return (
+        <main className="main">
+          <h2 className="main__title">{props.title}</h2>
+          <ImageSlider images={images} interval={7500} />
+          <div className="main__info">
+            <Overons />
+          </div>
+          <Menu />
+        </main>
+      )
+    case 1:
+      return(
+        <main className="main">
+          <h2 className="main__title">{props.title}</h2>
+          <Info/>
+        </main>
+      )
+    default:
+    // code block
+  }
+
 }
 
 export default Main;

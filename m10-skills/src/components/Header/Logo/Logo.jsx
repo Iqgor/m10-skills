@@ -1,4 +1,4 @@
-import React from 'react';
+import {Link} from "react-router-dom";
 import './logo.css';
 import LogoAmsterdam from './img/logo.png';
 
@@ -6,9 +6,9 @@ import LogoAmsterdam from './img/logo.png';
 
 function Logo() {
     return (
-        <a href="https://amsterdam.nl" className='logo'>
+        <Link to="/" className='logo'>
             <img className="logo__Img" src={LogoAmsterdam} alt="Gemeente Amsterdam logo" />
-        </a>
+        </Link>
     )
 }
 

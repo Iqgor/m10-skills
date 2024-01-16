@@ -6,7 +6,7 @@ import './contact.css';
 
 function Contact() {
     return (
-        <a className='contact' href="">Contact</a>
+        <a className='contact' href="https://www.amsterdam.nl">Contact</a>
     )
 }
 

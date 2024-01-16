@@ -14,16 +14,6 @@ const ImageSlider = ({ images, interval = 3000 }) => {
         };
     }, [images.length, interval]);
 
-    const nextImage = () => {
-        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    };
-
-    const prevImage = () => {
-        setCurrentImageIndex(
-            (prevIndex) => (prevIndex - 1 + images.length) % images.length
-        );
-    };
-
 
     let name = "Test" 
 
@@ -58,18 +48,11 @@ const ImageSlider = ({ images, interval = 3000 }) => {
 
     return (
         <div className="auto-slider-container">
-            {/* <button className="nav-button nav-button-left" onClick={prevImage}>
-                <i className="fa-solid fa-arrow-left"></i>
-            </button> */}
             <img
                 src={images[currentImageIndex]}
                 alt={`Slide ${currentImageIndex + 1}`}
                 className="auto-slider-image"
             />
-            
-            {/* <button className="nav-button nav-button-right" onClick={nextImage}>
-                <i className="fa-solid fa-arrow-right"></i>
-            </button> */}
             <h3 className='auto-slider-title'>{name}</h3>
         </div>
     );

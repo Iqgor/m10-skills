@@ -1,10 +1,12 @@
-*,*::after,*::before{
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 62.5%;
 }
 
@@ -16,7 +18,40 @@ body {
   font-size: 2rem;
 }
 
-a{
+a {
   color: black;
   text-decoration: none;
+}
+
+.arrow {
+  display: inline;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.underline{
+  position: relative;
+  display: inline;
+  max-width: max-content;
+  transition: 0.3s ease-in-out;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0.05rem;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.underline:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  background-color: #ff0000;
+
 }
