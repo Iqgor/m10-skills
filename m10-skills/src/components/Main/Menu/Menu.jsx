@@ -17,6 +17,7 @@ function Vakje(props) {
     const title = document.getElementsByClassName("title")
     const vakjeText = document.getElementsByClassName("vakjeText")
 
+
     const changeVakje = (i) => {
 
         if (geklikt === "nietgeklikt") {
@@ -42,6 +43,10 @@ function Vakje(props) {
 
     }
 
+    function toTop(){
+        document.documentElement.scrollTop = 0;
+    }
+
     let id = props.id
 
 
@@ -54,7 +59,7 @@ function Vakje(props) {
             </div>
             <div className="vakjeText">
                 <p>{props.info.texts[id]}</p>
-                <Link className="underline" to={props.info.links[id]}> <p className="arrow">&gt;</p> Meer info</Link>
+                <Link onClick={toTop} className="underline" to={props.info.links[id]}> <p className="arrow">&gt;</p> Meer info</Link>
             </div>
         </div>
     )
@@ -63,7 +68,8 @@ function Vakje(props) {
 
 function Menu() {
     const info = {
-        titles: ['Organisatie', 'Projecten', 'Werken bij BMV'], texts: [
+        titles: ['Organisatie', 'Projecten', 'Werken bij BMV'], 
+        texts: [
             'Het ontwikkelen en realiseren van maatschappelijke voorzieningen is binnen de gemeente Amsterdam in handen van team BMV: Bouwmanagement en Maatschappelijk Vastgoed, onderdeel van het Projectmanagementbureau.',
             'Bij BMV zijn we bezig met verschillende projecten binnen de gemeente amsterdam. De projecten gaan voornamlijk over maatschappelijke voorzieningen.',
             'BMV is altijd op zoek naar nieuwe collega’s, om aan de slag te gaan als junior-, medior- of senior-bouwmanager of projectmanager maatschappelijk vastgoed.'],

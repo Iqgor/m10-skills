@@ -10,7 +10,7 @@ import foto5 from './ImageSlider/img/foto5.jpg'
 import ImageSlider from './ImageSlider/Slider';
 import Overons from './Overons/Overons';
 import Menu from './Menu/Menu';
-import Info from './Info/Info'
+import Werkwijze from './Werkwijze/Werkwijze'
 
 function Main(props) {
   const images = [
@@ -21,7 +21,6 @@ function Main(props) {
     foto5,
 
   ];
-
 
 
 
@@ -40,13 +39,13 @@ function Main(props) {
       )
     case 1:
       return(
-        <main className="main">
+        <main className="main" id="top">
           <h2 className="main__title">{props.title}</h2>
-          <Info/>
+            <Werkwijze/>    
         </main>
       )
     default:
-    // code block
+    
   }
 
 }

@@ -10,13 +10,18 @@ header{
     z-index: 1
 }
 
-.header__left{
+.header__left , .header__right{
    display: flex;
    gap: 2rem; 
+   align-items: center;
 }
 
-.header__right{
-    display: flex;
-    gap: 2rem; 
-    align-items: center;
+@media only screen and (max-width:51.875rem) {
+    header{
+        flex-direction: column;
+        height: 100%;
+    }
+    .header__left{
+        flex-direction: column;
+    }
 }
