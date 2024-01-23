@@ -12,6 +12,11 @@
     flex-direction: column;
 }
 
+.infoParagraph > div > ul{
+    padding-left: 4rem;
+    list-style:decimal;
+}
+
 .infoParagraph h4{
     font-size: 125%;
 }

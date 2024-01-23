@@ -11,6 +11,7 @@ import ImageSlider from './ImageSlider/Slider';
 import Overons from './Overons/Overons';
 import Menu from './Menu/Menu';
 import Werkwijze from './Werkwijze/Werkwijze'
+import Werkenbij from './Werkenbij/Werkenbij'
 
 function Main(props) {
   const images = [
@@ -42,6 +43,13 @@ function Main(props) {
         <main className="main" id="top">
           <h2 className="main__title">{props.title}</h2>
             <Werkwijze/>    
+        </main>
+      )
+    case 3:
+      return(
+        <main className="main" id="top">
+          <h2 className="main__title">{props.title}</h2>
+            <Werkenbij/>    
         </main>
       )
     default:

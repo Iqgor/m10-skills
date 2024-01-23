@@ -18,7 +18,7 @@ export default function App() {
             <Route index element={<Home />} />
             <Route path="organisatie" element={<Organisatie naam="Organisatie" />} />
             <Route path="projecten" element={<Projecten naam="Organisatie"/>} />
-            <Route path="werkenbij" element={<Werk naam="Organisatie"/>} />
+            <Route path="werkenbij" element={<Werk naam="Werken bij"/>} />
           </Route>
           <Route path="*" element={<NoPage />} />
         </Routes>
