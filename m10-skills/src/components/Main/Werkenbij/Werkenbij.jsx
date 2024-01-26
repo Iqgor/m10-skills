@@ -1,13 +1,7 @@
 import React from "react";
 import './werkenbij.css'
-import { Link } from "react-router-dom";
-
 
 function Werkenbij() {
-
-    function toTop() {
-        document.documentElement.scrollTop = 0;
-    }
 
     return (
         <div className="main__info">

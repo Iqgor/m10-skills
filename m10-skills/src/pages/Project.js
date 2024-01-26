@@ -3,9 +3,9 @@ import Main from '../components/Main/Main';
 
 
 const Projecten = (props) => {
-    let id = 2
+    let id = 5
     return (
-        <Main props={id} title={props.naam}/>
+        <Main props={id} data={props}/>
     );
 };
 

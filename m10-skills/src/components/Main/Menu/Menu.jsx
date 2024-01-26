@@ -4,8 +4,8 @@ import {Link} from "react-router-dom";
 import './menu.css';
 
 import Foto1 from './img/foto1.webp';
-import Foto2 from './img/foto2.jpg';
-import Foto3 from './img/foto3.jpg';
+import Foto2 from './img/foto2.webp';
+import Foto3 from './img/foto3.webp';
 
 
 function Vakje(props) {
