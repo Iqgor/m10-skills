@@ -91,7 +91,7 @@ const projects = [
 
 export default function App() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="/m10-skills">
         <Routes>
           <Route path="/" element={< Layout/>}>
             <Route index element={<Home />} />
