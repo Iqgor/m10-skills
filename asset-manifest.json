@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/m10-skills/static/css/main.f2f7402c.css",
+    "main.js": "/m10-skills/static/js/main.9e878270.js",
+    "static/media/foto_1.jpg": "/m10-skills/static/media/foto_1.db15440d201515813d48.jpg",
+    "static/media/foto_8.png": "/m10-skills/static/media/foto_8.be1d03817ad2b01a7c51.png",
+    "static/media/foto3.webp": "/m10-skills/static/media/foto3.ec50976d18cddd1a13e4.webp",
+    "static/media/foto_6.jpg": "/m10-skills/static/media/foto_6.117a1dd795f7924b44dd.jpg",
+    "static/media/foto_2.jpg": "/m10-skills/static/media/foto_2.4e7c58465c7b61711a9d.jpg",
+    "static/media/foto4.webp": "/m10-skills/static/media/foto4.8d4c77ec58cdd75538f2.webp",
+    "static/media/foto_4.webp": "/m10-skills/static/media/foto_4.8d4c77ec58cdd75538f2.webp",
+    "static/media/foto_5.jpg": "/m10-skills/static/media/foto_5.55836e51a205435d8caf.jpg",
+    "static/media/foto1.webp": "/m10-skills/static/media/foto1.f8a3f9f03558d19c40d8.webp",
+    "static/media/foto_7.webp": "/m10-skills/static/media/foto_7.a0cd21f6cf301981dc84.webp",
+    "static/media/foto_3.png": "/m10-skills/static/media/foto_3.032ae4ecc8dcfb6d6884.png",
+    "static/media/foto2.webp": "/m10-skills/static/media/foto2.212c98daba30d6ea959d.webp",
+    "static/media/foto5.webp": "/m10-skills/static/media/foto5.a81bd475b44cab1b6ed9.webp",
+    "index.html": "/m10-skills/index.html",
+    "main.f2f7402c.css.map": "/m10-skills/static/css/main.f2f7402c.css.map",
+    "main.9e878270.js.map": "/m10-skills/static/js/main.9e878270.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2f7402c.css",
+    "static/js/main.9e878270.js"
+  ]
+}
