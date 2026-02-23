@@ -1,0 +1,39 @@
+.projects1{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    justify-content: center;
+}
+
+
+.project{
+    width:30rem;
+    aspect-ratio: 1/1;
+    box-shadow: rgba(255, 0, 0, 0.2) 0px 7px 29px 0px;
+    border-radius: 1.25rem;
+    padding: 2rem;
+    transition: 0.75s all;
+    position: relative;
+    color:rgb(242, 9, 9);
+    
+
+}
+
+.project:hover{
+    cursor: pointer;
+    box-shadow: rgba(255, 0, 0, 0.75) 0px 7px 29px 0px;
+
+}
+
+.project > img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.2rem;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

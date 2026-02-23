@@ -1,0 +1,36 @@
+.infoParagraph{
+    width: 100%;
+    display: flex;
+    font-size: 90%;
+
+}
+
+.infoParagraph > div{
+    width: 60%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.infoParagraph > div > ul{
+    padding-left: 4rem;
+    list-style:decimal;
+}
+
+.infoParagraph h4{
+    font-size: 125%;
+}
+
+.start{
+    justify-content: flex-start;
+}
+
+.end{
+    justify-content: flex-end;
+}
+
+@media screen and (max-width:37.5rem) {
+    .infoParagraph > div{
+        width: 100%;
+    }
+}

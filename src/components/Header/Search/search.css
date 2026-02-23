@@ -1,0 +1,28 @@
+.search-container {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .search-toggle {
+    color: black;
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-size: inherit;
+  }
+  
+  .search-input {
+    width: 0;
+    border: none;
+    outline: none;
+    transition: width 0.3s ease-in-out;
+    font-family: inherit;
+    border-bottom: 0.25rem solid #ff0000;
+    border-radius: 0.2rem;
+  }
+  
+  .search-container.open .search-input {
+    width: 20rem; 
+  }
+  

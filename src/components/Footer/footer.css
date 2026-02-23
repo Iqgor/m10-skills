@@ -1,0 +1,34 @@
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 2rem 4rem  2rem 4rem ;
+    border-top: 0.125rem solid black;
+
+}
+
+.footer > section{
+    width: 25%;
+    height: 100%;
+}
+
+.footerAbout > div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media only screen and (max-width:50rem) {
+    .footerLink > p {
+        display: none;
+    }
+}
+@media only screen and (max-width:37.5rem) {
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer > section{
+        width: 100%;
+    }
+}
